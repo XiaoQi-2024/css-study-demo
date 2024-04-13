@@ -12,7 +12,7 @@ body {
 
 /* 头部区域 */
 .header {
-    height: 1200px;
+    height: 100px;
     background-color: #fff;
 }
 
@@ -76,7 +76,7 @@ body {
     outline: none; /* 去掉表单控件的焦点框，点中时也不显示边框 */
 }
 
-.search input::placeholder {
+.search input::placeholder {    /* ::placeholder 选择器用于选取带有占位符文本的表单元素，并让您设置占位符文本的样式。 */
     font-size: 14px;
     color: #999;
 }
@@ -102,4 +102,102 @@ body {
 .user span {
     font-size: 16px;
     color: #666;
+}
+
+
+/* banner 区域 */
+.banner {
+    height: 420px;
+    background-color: #0092cb;
+}
+
+.banner .wrapper {
+    display: flex;  /* div转换为弹性盒子 */
+    height: 420px;
+    justify-content: space-between;    /* 弹性盒子内布局方式：主轴对齐-两端对齐 */
+    background-image: url(../uploads/banner.png);
+}
+
+/* 侧导航 */
+.banner .left {
+    padding: 3px 20px;
+    height: 420px;
+    width: 191px;
+    background-color: rgb(0, 0, 0, 0.42);
+}
+
+.banner .left a {
+    display: block;
+    height: 46px;
+    background: url(../images/right.png) no-repeat right center;
+    line-height: 46px;  /* 行高同盒子块高 */
+    font-size: 16px;
+    color: #fff;
+}
+
+.banner .left a:hover { /* :hover 鼠标移动到的位置 */
+    background: url(../images/right-hover.png) no-repeat right center;
+    color: #00a4ff;
+}
+
+.banner .right {
+    margin-top: 60px;
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+
+.banner .right h3 {
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400; /* 400为不加粗 */
+}
+
+.banner .right .content {
+    padding: 14px;
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.banner .right .content dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .right .content dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.banner .right .content dd {
+    margin-bottom: 8px;
+    font-size: 12px;    
+    line-height: 16px;
+}
+
+.banner .right .content span {
+    color: #00a4ff;
+}
+
+.banner .right .content strong {
+    color: #7d7d7d;
+    font-weight: 400;
+}
+
+.banner .right .content a {
+    display: block;
+    height: 32px;   
+    background-color: #00a4ff;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 15px;
 }
