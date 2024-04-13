@@ -263,12 +263,12 @@ body {
     line-height: 60px;
 }
 
-.course h3 {
+.wrapper .hd h3 {
     font-size: 21px;
     font-weight: 400;
 }
 
-.course .more {
+.more {
     padding-right: 20px;
     font-size: 14px;
     color: #999;
@@ -321,4 +321,38 @@ body {
 
 .bd li .text p i {
     font-style:normal;
+}
+
+.wrapper .hd ul {
+    display: flex;
+}
+
+.wrapper .hd li {
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+.wrapper .hd li .active,
+.wrapper .hd li a:hover {
+    color: #00a4ff;
+}
+
+.wrapper .bd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd .left {
+    width: 228px;
+    /* background-color: pink; */
+}
+
+.bd .right {
+    width: 957px;
+    /* background-color: pink; */
+}
+
+.bd .right .top {
+    margin-bottom: 15px;
+    height: 100px;
 }
