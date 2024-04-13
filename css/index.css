@@ -356,3 +356,56 @@ body {
     margin-bottom: 15px;
     height: 100px;
 }
+
+/* 版权 */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-top: 60px;
+    height: 273px;background-color: #fff;
+}
+
+.footer .left {
+    width: 440px;
+    /* background-color: pink; */
+}
+
+.footer .left p {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #666;
+}
+
+.footer .left .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    line-height: 34px;
+    text-align: center;
+}
+
+.footer .right {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.footer .right dl {
+    margin-left: 130px;
+}
+
+.footer .right dt {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer .right dd a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
