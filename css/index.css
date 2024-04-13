@@ -234,6 +234,10 @@ body {
 
 }
 
+.recomment ul li a:hover {
+    color: #00a4ff;
+}
+
 /* 过滤器 最后一个a标签右边框没有实线 */
 .recomment ul li:last-child a {
     border-right: 0;
@@ -244,4 +248,77 @@ body {
     line-height: 60px;
     color: #00a4ff;
     font-size: 16px;
+}
+
+/* 推荐课程 */
+.course {
+    margin-top: 15px;
+}
+
+/* 标题 公共类 */
+.hd {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+}
+
+.course h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.course .more {
+    padding-right: 20px;
+    font-size: 14px;
+    color: #999;
+    background: url(../images/more.png) no-repeat right center;
+}
+
+/* 课程内容 公共类 start */
+.bd ul {
+    display: flex;
+    flex-wrap: wrap;    /* 弹性盒子换行 */
+    justify-content: space-between;
+}
+
+/* 课程内容 公共类 end */
+.bd li {
+    margin-bottom: 15px;
+    width: 228px;
+    height: 271px;
+    background-color: pink;
+}
+
+.bd li .pic {
+    height: 156px;
+}
+
+.bd li .text {
+    padding: 20px;
+    height: 115px;
+    background-color: #fff;
+}
+
+.bd li .text h4 {
+    margin-bottom: 13px;
+    height: 40px;
+    line-height: 20px;  /* 两行 */
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;   /* 溢出隐藏 */
+}
+
+.bd li .text p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+
+.bd li .text p span {
+    color: #fa6400;
+}
+
+.bd li .text p i {
+    font-style:normal;
 }
